@@ -34,7 +34,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    // '@nuxtjs/vuetify',
     ['@nuxtjs/vuetify', { iconfont: 'mdi' }]
   ],
 
@@ -52,6 +52,10 @@ export default {
   },
 
   i18n: {
+    // module options
+  },
+
+  firebase: {
     // module options
   },
 
@@ -77,6 +81,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend(config, ctx) {}
+    extend(config, ctx) {
+
+    }
   }
 }

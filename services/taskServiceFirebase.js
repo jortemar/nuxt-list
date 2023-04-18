@@ -1,9 +1,16 @@
-import { createApi, updateApi, deleteApi, getApi } from "./taskService"
+import { updateApi, deleteApi, getApi } from "./taskService"
+// import { createApi, updateApi, deleteApi, getApi } from "./taskService"
+import { db } from "~/plugins/firebase"
 
 export const serviceCreate = async (nombreTarea) => {
     const task = {taskName: nombreTarea, completed: false }
-    const { data } = await createApi(task)
-    task.id = data.name
+    // const { data } = await createApi(task)
+    const response = db.collection('tasks').add(task)
+    console.log(response)
+    response.then(() => {
+        this.$router.back()
+    })
+    task.id = response.name
 
     return task
 }

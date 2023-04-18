@@ -3,7 +3,7 @@
         <!-- <v-checkbox-btn @change="changeToPending(task)" /> -->
         <!-- <v-checkbox @change="changeToPending(task)" /> -->
 
-        <v-text-field hide-details class="bg-amber-lighten-4" style="color:white">
+        <v-text-field hide-details class="bg-amber-lighten-4" >
             {{ task.taskName }}
         </v-text-field>
     <!-- </div> -->

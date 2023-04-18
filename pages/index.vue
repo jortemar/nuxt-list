@@ -1,5 +1,5 @@
 <template> 
-  <v-container fluid class="mt-5">  
+  <v-container fluid class="mt-5 bg-app">  
     <v-row>
       <v-col offset="4" cols="4">
         <!-- TITULO -->
@@ -44,7 +44,9 @@ export default {
   },
 
   mounted() {
-    this.loadTasks()
+    if (process.client) {
+      this.loadTasks()
+    }
   }
 }
 
@@ -58,7 +60,7 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
   }
 
   .bg-app {

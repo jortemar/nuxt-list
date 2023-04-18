@@ -8,7 +8,6 @@
           v-model.trim="taskName"
           @keypress.enter="addTask" />  
 
-          {{ this._counter }}
       <!-- <v-text-field
           class="font-italic amber-lighten-3"
           :label="$t('inputMessage')"
@@ -65,3 +64,11 @@ export default {
 }
 
 </script>
+
+<style>
+.ddddd {
+  background-color: #AD1457;
+}
+
+
+</style>

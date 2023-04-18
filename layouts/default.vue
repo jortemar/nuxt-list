@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark class="bg-app">
     <v-navigation-drawer
       v-model="drawer"
       fixed
@@ -63,8 +63,8 @@
     </v-app-bar>
 
     <!-- MAIN -->
-    <v-main >
-      <v-container >
+    <v-main>
+      <v-container class="bg-app">
         <Nuxt />
       </v-container>
     </v-main>
@@ -126,3 +126,17 @@ export default {
   }
 }
 </script>
+
+<style >
+
+#app {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+    background-color: #f8f9fa;
+  }
+
+</style>
