@@ -1,10 +1,10 @@
 
 export const pendingTasks = (state) => {
-    return state.taskList.filter(task => !task.completed)
+    return state._taskList.filter(task => !task.completed)
 }
 
 export const completedTasks = (state) => {
-    return state.taskList.filter(task => task.completed)
+    return state._taskList.filter(task => task.completed)
 }
 
 

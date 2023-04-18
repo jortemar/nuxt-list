@@ -47,5 +47,6 @@ export const serviceLoad = async () => {
         }
     }
     
+    console.log(tasks)
     return tasks
 }

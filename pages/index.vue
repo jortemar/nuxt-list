@@ -43,7 +43,7 @@ export default {
     ...mapActions('tasklist', ['loadTasks']),
   },
 
-  created() {
+  mounted() {
     this.loadTasks()
   }
 }

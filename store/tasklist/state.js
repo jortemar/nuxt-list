@@ -1,7 +1,7 @@
 
 export default () => ({
 
-    taskList: [],
+    _taskList: [],
     // notificationTasks: [],
     _counter: 3
 

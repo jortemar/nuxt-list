@@ -16,15 +16,15 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from 'vue'
+// import { defineAsyncComponent } from 'vue'
 import { mapGetters } from 'vuex'
 
 export default {   
   name: 'CompletedTasks',
 
-  components: {
-    Task: defineAsyncComponent(() => import(/* webpackChunkName: "Task" */ '@/components/Task'))
-  },
+  // components: {
+  //   Task: defineAsyncComponent(() => import(/* webpackChunkName: "Task" */ '@/components/Task'))
+  // },
 
   computed: {
     ...mapGetters('tasklist', ['completedTasks']),

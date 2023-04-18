@@ -1,11 +1,12 @@
 <template>
-    <div class="d-flex">
-        <v-checkbox-btn @change="changeToPending(task)" />
+    <!-- <div class="d-flex"> -->
+        <!-- <v-checkbox-btn @change="changeToPending(task)" /> -->
+        <!-- <v-checkbox @change="changeToPending(task)" /> -->
 
-        <v-text-field hide-details class="bg-amber-lighten-4">
+        <v-text-field hide-details class="bg-amber-lighten-4" style="color:white">
             {{ task.taskName }}
         </v-text-field>
-    </div>
+    <!-- </div> -->
 </template>
 
 <!-- <template>
@@ -15,10 +16,10 @@
 </template> -->
 
 <script>
-import { mapActions } from 'vuex'
+// import { mapActions } from 'vuex'
 
 export default {
-    name: 'Task',
+    // name: 'Task',
     
     props: {
         task: {
@@ -27,15 +28,15 @@ export default {
         }
     },
 
-    methods: {
-        ...mapActions('tasklist', ['updateTask']),
+    // methods: {
+    //     ...mapActions('tasklist', ['updateTask']),
 
-        changeToPending(completedTask) {
-        this.updateTask(completedTask)
+    //     changeToPending(completedTask) {
+    //     this.updateTask(completedTask)
         
-      // this.$store.state.tasklist.pendingTask = completedTask.name
-    }
-  }
+    //   // this.$store.state.tasklist.pendingTask = completedTask.name
+    // }
+  
 }
 </script>
 

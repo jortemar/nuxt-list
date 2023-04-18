@@ -1,5 +1,5 @@
-// import { serviceCreate, serviceUpdate, serviceDelete, serviceLoad } from "@/services/taskServiceFirebase"
-import { serviceCreate, serviceUpdate, serviceDelete, serviceLoad } from "@/services/taskServiceLocalStorage"
+import { serviceCreate, serviceUpdate, serviceDelete, serviceLoad } from "@/services/taskServiceFirebase"
+// import { serviceCreate, serviceUpdate, serviceDelete, serviceLoad } from "@/services/taskServiceLocalStorage"
 
 export const createTask = async ({ commit }, nombreTarea) => {
     commit('addTask', await serviceCreate(nombreTarea))
@@ -23,5 +23,6 @@ export const loadTasks = async ({ commit }) => {
         return
     }
 
+    console.log(tasks)
     commit('setTaskList', tasks)
 }
